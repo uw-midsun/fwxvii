@@ -26,7 +26,7 @@ bazel_dep(name = "toolchains_arm_gnu", version = "1.1.0")
 
 arm_toolchain = use_extension("@toolchains_arm_gnu//:extensions.bzl", "arm_toolchain")
 
-arm_toolchain.arm_none_eabi()
+arm_toolchain.arm_none_eabi(version = "13.2.1")
 
 use_repo(arm_toolchain, "arm_none_eabi")
 
