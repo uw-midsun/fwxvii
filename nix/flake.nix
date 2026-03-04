@@ -31,6 +31,7 @@
             buildInputs = with pkgs; [
               bazelisk
               libtinfo
+              clang-tools
             ];
           };
         }
