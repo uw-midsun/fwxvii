@@ -1,0 +1,7 @@
+[formatter.nix]
+command = "nixpkgs-fmt"
+includes = ["*.nix"]
+
+[formatter.buildifier]
+command = "buildifier"
+includes = ["*.bazel", "*.bzl"]

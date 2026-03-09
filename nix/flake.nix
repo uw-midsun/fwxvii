@@ -32,6 +32,12 @@
               bazelisk
               libtinfo
               clang-tools
+
+              treefmt
+
+              # Formatters:
+              bazel-buildtools
+              nixpkgs-fmt
             ];
           };
         }
