@@ -25,11 +25,17 @@
         system:
         let
           pkgs = buildNixpkgs system;
+
+          bazelisk-override = pkgs.bazelisk.overrideAttrs (old: {
+            postInstall = (old.postInstall or "") + ''
+              ln -s $out/bin/bazelisk $out/bin/bazel
+            '';
+          });
         in
         {
           default = pkgs.mkShell {
             buildInputs = with pkgs; [
-              bazelisk
+              bazelisk-override
               libtinfo
               clang-tools
 
