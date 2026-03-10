@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Shim clang format for treefmt.
+bazel run @clang_toolchain//:clang-format

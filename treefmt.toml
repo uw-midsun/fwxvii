@@ -5,3 +5,7 @@ includes = ["*.nix"]
 [formatter.buildifier]
 command = "buildifier"
 includes = ["*.bazel", "*.bzl"]
+
+[formatter.clang-format]
+command = "./tools/clang-format"
+includes = [".cpp", ".c", ".h", ".hpp"]
