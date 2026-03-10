@@ -1,0 +1,7 @@
+---
+BasedOnStyle: Google
+ColumnLimit: 120
+QualifierAlignment: Left
+DerivePointerAlighment: false
+InsertNewlineAtEOF: true
+IndentWidth: 2
