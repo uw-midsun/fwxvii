@@ -17,10 +17,10 @@ llvm.toolchain(
             # Diagnostics
             "-fcolor-diagnostics",
             "-Wall",
+            "-Werror",
             "-Wthread-safety",
             "-Wself-assign",
             "-Wmissing-field-initializers",
-            "-Werror",
         ],
     },
     cxx_flags = {
@@ -32,5 +32,7 @@ llvm.toolchain(
     llvm_version = "19.1.0",
 )
 use_repo(llvm, "clang_toolchain")
+
+bazel_dep(name = "arm-gcc-embedded", version = "15.2.rel1-x86-64-arm-none-eabi", repo_name = "gcc_x86_64_arm_none_eabi")
 
 register_toolchains("@clang_toolchain//:all")
