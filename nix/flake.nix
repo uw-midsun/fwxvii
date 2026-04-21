@@ -44,6 +44,7 @@
               # Formatters:
               bazel-buildtools
               nixpkgs-fmt
+              prettier
             ];
           };
         }
