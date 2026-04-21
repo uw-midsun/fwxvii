@@ -1,9 +1,9 @@
 {
-    "archive_type": "tar.xz",
-    "url": "https://developer.arm.com/-/media/Files/downloads/gnu/15.2.rel1/binrel/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi.tar.xz",
-    "integrity": "sha256-WXiTKCrIxqsaQHOXfyNimQGEWZZDtMXuNIcKghV4OhY=",
-    "strip_prefix": "arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi",
-    "overlay": {
-	"BUILD.bazel": "sha256-QdH0l5/vWObeRRcZYIL4Hpz7WgQyE/iJNiPZ80J+32k="
-    }
+  "archive_type": "tar.xz",
+  "url": "https://developer.arm.com/-/media/Files/downloads/gnu/15.2.rel1/binrel/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi.tar.xz",
+  "integrity": "sha256-WXiTKCrIxqsaQHOXfyNimQGEWZZDtMXuNIcKghV4OhY=",
+  "strip_prefix": "arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi",
+  "overlay": {
+    "BUILD.bazel": "sha256-QdH0l5/vWObeRRcZYIL4Hpz7WgQyE/iJNiPZ80J+32k="
+  }
 }
